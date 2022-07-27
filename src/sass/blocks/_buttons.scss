@@ -1,0 +1,35 @@
+.button {
+    background: #FFFFFF;
+    border: 1px solid #6F6D7B;
+    color: #2A2B30;
+    border-radius: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    width: 183px;
+    height: 43px;
+    &:hover {
+        border: 2px solid #000000;
+    }
+    &:active {
+        background: $main-color;
+        border: 1px solid #FFFFFF;
+        color: #FFFFFF;
+    }
+    &:visited {
+        overflow: unset;
+    }
+    &_about {
+        margin-left: 30px;
+    }
+    &_submit {
+        background: $main-color;
+        width: 370px;
+        height: 48px;
+        border: 1px solid #FFFFFF;
+        color: #FFFFFF;
+        margin-top: 40px;
+    }
+}

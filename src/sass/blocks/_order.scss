@@ -1,0 +1,50 @@
+.order {
+    min-height: 920px;
+    padding: 121px 0 151px;
+    background: url('../img/order_bg.jpg') center (center/cover) no-repeat;
+    &__subtittle {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #BBBBBB;
+        margin-top: 30px;
+        text-align: center;
+    }
+    &__list {
+        margin-top: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 209px;
+        height: 164.37px;
+        display: flex;
+        flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+    }
+    &__round {
+        display: flex;
+		justify-content: center;
+		align-items: center;
+        width: 100px;
+        height: 100px;
+        background-color: $main-color;
+        border-radius: 100%;
+        border: 5px solid #286690;
+    }
+    &__descr {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #FFFFFF;
+        width: 188px;
+        height: 44.37px;
+    }
+    &__form {
+        margin-top: 80px;
+    }
+}

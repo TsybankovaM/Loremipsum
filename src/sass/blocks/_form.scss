@@ -1,0 +1,89 @@
+.form {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;  
+    }
+    &__input {
+        width: 370px;
+        height: 48px;
+        background: rgba(255, 255, 255, 0.85);
+        border: 1px solid #FFFFFF;
+        border-radius: 3px;
+        padding: 12px 10px;
+        &_hidden {
+            opacity: 0;
+            position: absolute;
+            z-index: -1;
+        }
+        }
+    &__select {
+        width: 370px;
+        height: 48px;
+        background: rgba(255, 255, 255, 0.85);
+        border: 1px solid #FFFFFF;
+        border-radius: 3px;
+        padding: 12px 10px;
+    }
+    &__slider-wrapper {
+        width: 770px;
+        height: 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__slider-descr {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+    }
+    &__slider {
+        appearance: none;
+        background: rgba(255, 255, 255, 0.7);
+        border: 1px solid #FFFFFF;
+        height: 6px;
+        border-radius: 3px;
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 23.72px;
+            height: 23.72px;
+            border-radius: 100%; 
+            background: #42A9ED;
+            border: 3px solid #286690;
+            cursor: pointer;
+        }
+        &::-moz-range-thumb {
+            width: 23.72px;
+            height: 23.72px;
+            border-radius: 100%;
+            background: #42A9ED;
+            border: 3px solid #286690;
+            cursor: pointer;
+        }
+    }
+    &__input-button {
+        position: relative;
+        width: 370px;
+        height: 48px;
+        background: #FFFFFF;
+        border: 2px solid #3E9CDC;
+        border-radius: 3px;
+        padding: 12px 96.93px 12px 96.93px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+    &__input-button-text {
+        text-transform: uppercase;
+        font-size: 15px;
+        line-height: 18px;
+        color: #272733;
+    }
+
+}
