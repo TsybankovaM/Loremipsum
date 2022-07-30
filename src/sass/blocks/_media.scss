@@ -5,12 +5,12 @@
     .header {
         padding: 25px 0;
     }
-    .tittle_main {
-        width: 750px;
-    }
     .promo {
         min-height: 774px;
         padding: 180px 0 130px 0;
+        &__content {
+            width: 750px;
+        }
     }
     .order {
         min-height: 810px;
@@ -33,6 +33,9 @@
                 }
             }
         }
+        &__icon {
+            width: 50px;
+        }
         &__descr {
             font-size: 15px;
             line-height: 18px;
@@ -52,6 +55,9 @@
         &__input-button {
             width: 300px;
             height: 40px;
+            svg {
+                height: 18px;
+            }
         }
         &__input-button-text {
             font-size: 13px;
@@ -94,7 +100,114 @@
     .container {
         max-width: 720px;
     }
-
+    .header {
+        padding: 20px 0;
+        &__logo {
+            font-size: 24px;
+            line-height: 28px;
+        }
+    }
+    .menu {
+        &__item {
+            padding-left: 40px;
+        }
+        &__link {
+            font-size: 12px;
+        }
+    }
+    .tittle {
+        &_main {
+        font-size: 40px;
+        line-height: 48px;
+        }
+        &_section {
+            font-size: 32px;
+            line-height: 36px;
+        }
+    }
+    .promo {
+        min-height: 665px;
+        padding: 140px 0 150px 0;
+        &__content {
+            width: 630px;
+        }
+        &__descr {
+            font-size: 18px;
+            line-height: 20px;
+            margin-top: 40px;
+        }
+        &__item {
+            font-size: 18px;
+            line-height: 20px;
+        }
+        &__buttons {
+            margin-top: 50px;
+        }
+    }
+    .button {
+        width: 175px;
+        height: 40px;
+        font-size: 12px;
+        &_about {
+            margin-left: 20px;
+        }
+        &_submit {
+            width: 300px;
+            height: 40px;
+            font-size: 13px;
+        }
+    }
+    .order {
+        padding: 75px 0;
+        &__subtittle {
+            font-size: 17px;
+            line-height: 21px;
+        }
+        &__list {
+            margin-top: 50px;
+        }
+        &__form {
+            margin-top: 70px;
+        }
+    }
+    .form {
+        &__wrapper {
+            gap: 25px;
+        }
+        &__slider-wrapper {
+            order: 5;
+            flex-grow: 2;
+        }
+        &__input-button {
+            order: 4;
+        }
+    }
+    .footer {
+        padding: 10px 0;
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__descr {
+            width: 50%;
+            text-align: center;
+            padding: 5px 0;
+        }
+        &__payment {
+            width: 50%;
+            border: none;
+            padding: 5px 0;
+        }
+        &__contacts {
+            width: 50%;
+            justify-content: space-around;
+            padding: 5px 0;
+        }
+        &__contact {
+            &:last-child {
+                margin-left: 0;
+            }
+        }
+    }
 }
 
 

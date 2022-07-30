@@ -2,6 +2,9 @@
     min-height: 850px;
     background: url('../img/main_bg.jpg') center (center/cover) no-repeat;
     padding: 203px 0px 202px 0;
+    &__content {
+        width: 780px;
+    }
     &__descr {
         font-weight: 700;
         font-size: 20px;
