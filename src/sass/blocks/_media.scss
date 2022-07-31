@@ -150,7 +150,7 @@
             margin-left: 20px;
         }
         &_submit {
-            width: 300px;
+            width: 345px;
             height: 40px;
             font-size: 13px;
         }
@@ -175,8 +175,15 @@
         &__slider-wrapper {
             order: 5;
         }
+        &__input {
+            width: 345px;
+        }
         &__input-button {
+            width: 345px;
             order: 4;
+        }
+        &__select {
+            width: 345px;
         }
     }
     .footer {
@@ -275,7 +282,7 @@
 			margin: 10px 0;
         }
 		&__link {
-            font-size: 13px;
+            font-size: 15px;
         }	
     }
     .tittle {
@@ -359,6 +366,11 @@
             width: 100%;
         }
     }
+    .button {
+        &_submit {
+            width: 100%;
+        }
+    }
     .footer {
         &__descr {
             width: 80%;
@@ -373,10 +385,118 @@
 
 }
 
-
 @media (max-width: 576px) {
     .container {
         width: 100%;
         padding: 0 10px;
     }
+    .header {
+        padding: 10px 0;
+        &__logo {
+            font-size: 20px;
+            line-height: 22px;
+        }
+    }
+    .menu {
+        width: 80%;
+    }
+    .tittle {
+        &_main {
+            font-size: 24px;
+            line-height: 28px;
+        }
+        &_section {
+            font-size: 22px;
+            line-height: 24px;
+        }
+    }
+    .promo {
+        min-height: 345px;
+        padding: 70px 0 30px 0;
+        &__content {
+            width: 300px;
+        }
+        &__descr {
+            font-size: 12px;
+            line-height: 13px;
+            margin-top: 20px;
+        }
+        &__list {
+            margin-top: 5px;
+        }
+        &__item {
+            font-size: 12px;
+            line-height: 13px;
+            margin: 0 0 5px 15px;
+            &:before {
+                left: -11px;
+                top: 5px;
+                height: 1px;
+            }
+        }
+        &__buttons {
+            margin-top: 25px;
+        }
+    }
+    .button {
+        width: 145px;
+        height: 35px;
+        font-size: 12px;
+        &_about {
+            margin-left: 5px;
+        }
+        &_submit {
+            width: 100%;
+            height: 40px;
+        }
+    }
+    .order {
+        padding: 35px 0;
+        &__subtittle {
+            font-size: 15px;
+            line-height: 17px;
+            margin-top: 20px;
+        }
+        &__list {
+            margin-top: 25px;
+            gap: 15px;
+            li:nth-child(n+2)::before {
+                display: none;
+            }
+        }
+        &__item {
+            height: 130px;
+            width: 100%;
+        }
+        &__round {
+            width: 80px;
+            height: 80px;
+        }
+        &__icon {
+            width: 40px;
+        }
+        &__form {
+            margin-top: 35px;
+        }
+    }
+    .form {
+        &__select {
+            padding: 10px 5px;
+        }
+        &__slider-descr {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+    .footer {
+        &__descr {
+            width: 100%;
+        }
+        &__payment {
+            width: 100%;
+        }
+        &__contacts {
+            width: 100%;
+        }
+    }    
 }
