@@ -16,18 +16,26 @@
         flex-wrap: wrap;
         gap: 30px;
         justify-content: center;
+            li:nth-child(n+2)::before {
+                content: '.....';
+                position: absolute;
+                letter-spacing: 14px;
+                color: #C4C4C4;
+                left: -34%;
+                font-size: 50px;
+            } 
     }
     &__item {
+        position: relative;
         width: 209px;
         height: 164.37px;
         display: flex;
         flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
-        padding: 0 10.5px;
+        padding: 0 10.5px;   
     }
     &__round {
-        position: relative;
         display: flex;
 		justify-content: center;
 		align-items: center;
@@ -36,17 +44,6 @@
         background-color: $main-color;
         border-radius: 100%;
         border: 5px solid #286690;
-        &:nth-child(n+1) {
-            &::before {
-            content: '.....';
-            position: absolute;
-            letter-spacing: 14px;
-            color: #C4C4C4;
-            left: -147%;
-            top: -2%;
-            font-size: 50px;
-            }
-        }
     }
     &__descr {
         font-weight: 400;

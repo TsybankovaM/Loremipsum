@@ -30,11 +30,11 @@
         padding: 12px 10px;
     }
     &__slider-wrapper {
-        width: 770px;
         height: 48px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        flex-grow: 2;
     }
     &__slider-descr {
         display: flex;
