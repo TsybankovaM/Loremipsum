@@ -1,4 +1,5 @@
 .button {
+    display: inline-block;
     background: #FFFFFF;
     border: 1px solid #6F6D7B;
     color: #2A2B30;
@@ -10,16 +11,18 @@
     line-height: 16px;
     width: 183px;
     height: 43px;
+    padding: 15px 0;
     &:hover {
         border: 2px solid #000000;
+        color: #2A2B30;
+        text-decoration: none;
+
     }
     &:active {
         background: $main-color;
         border: 1px solid #FFFFFF;
         color: #FFFFFF;
-    }
-    &:visited {
-        overflow: unset;
+        text-decoration: none;
     }
     &_about {
         margin-left: 30px;
